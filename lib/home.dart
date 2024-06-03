@@ -169,7 +169,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0, 0, 16, 0),
               child: Icon(
-                Icons.settings_outlined,//new
+                Icons.person_search,
                 color: Colors.black,
                 size: 24,
               ),
