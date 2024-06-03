@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.medicine">
+
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Specify the minimum and target SDK versions -->
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="34"/>
+
+    <!-- Application information -->
+    <application
+        tools:overrideLibrary="io.flutter.plugins.firebase.auth">
+    </application>
+</manifest>
