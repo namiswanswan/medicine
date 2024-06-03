@@ -158,7 +158,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
               child: Text(
                 'Welcome, Sana',
                 style: FlutterFlowTheme.of(context).titleLarge.override(
-                  fontFamily: 'Inter',
+                  fontFamily: 'Poppins',
                   fontSize: 25,
                   letterSpacing: 0,
                 ),
@@ -169,7 +169,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0, 0, 16, 0),
               child: Icon(
-                Icons.settings_outlined,
+                Icons.settings_outlined,//new
                 color: Colors.black,
                 size: 24,
               ),
@@ -205,11 +205,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                               FlutterFlowTheme.of(context).primaryText,
                               unselectedLabelColor:
                               FlutterFlowTheme.of(context).secondaryText,
-                              backgroundColor:
-                              FlutterFlowTheme.of(context).accent1,
+                              backgroundColor: Color(0xFF4C06D5CD),
                               unselectedBackgroundColor:
                               FlutterFlowTheme.of(context).alternate,
-                              borderColor: FlutterFlowTheme.of(context).primary,
+                              borderColor: Color(0xFF06d5cd),
                               unselectedBorderColor:
                               FlutterFlowTheme.of(context).alternate,
                               borderWidth: 2,
@@ -243,10 +242,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     FlutterFlowCalendar(
-                                      color:
-                                      FlutterFlowTheme.of(context).primary,
-                                      iconColor: FlutterFlowTheme.of(context)
-                                          .secondaryText,
+                                      color: Color(0xFF06D5CD),
+                                      iconColor: Color(0xFF101518),
                                       weekFormat: true,
                                       weekStartsMonday: true,
                                       onChange:
@@ -322,8 +319,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                         width: 363,
                                         height: 100,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
+                                          color: Color(0xFFFFFFFF),
                                           borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(18),
                                             bottomRight: Radius.circular(18),
@@ -377,7 +373,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .titleLarge
                                                                 .override(
                                                               fontFamily:
-                                                              'Inter',
+                                                              'Poppins',
                                                               letterSpacing:
                                                               0,
                                                             ),
@@ -450,8 +446,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                         width: 363,
                                         height: 100,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
+                                          color: Color(0xFFFFFFFF),
                                           borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(18),
                                             bottomRight: Radius.circular(18),
@@ -505,7 +500,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .titleLarge
                                                                 .override(
                                                               fontFamily:
-                                                              'Inter',
+                                                              'Poppins',
                                                               letterSpacing:
                                                               0,
                                                             ),
@@ -578,8 +573,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                         width: 363,
                                         height: 100,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
+                                          color: Color(0xFFFFFFFF),
                                           borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(18),
                                             bottomRight: Radius.circular(18),
@@ -633,7 +627,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .titleLarge
                                                                 .override(
                                                               fontFamily:
-                                                              'Inter',
+                                                              'Poppins',
                                                               letterSpacing:
                                                               0,
                                                             ),
@@ -706,8 +700,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                         width: 390,
                                         height: 66,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .accent1,
+                                          color: Color(0xFF4C06D5CD),
                                           borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(19),
                                             bottomRight: Radius.circular(19),
@@ -734,10 +727,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                     buttonSize: 65,
                                                     icon: Icon(
                                                       Icons.home_sharp,
-                                                      color:
-                                                      FlutterFlowTheme.of(
-                                                          context)
-                                                          .primaryText,
+                                                      color: Colors.black,
                                                       size: 25,
                                                     ),
                                                     onPressed: () async {
@@ -766,10 +756,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                       borderRadius: 60,
                                                       borderWidth: 1,
                                                       buttonSize: 65,
-                                                      fillColor:
-                                                      FlutterFlowTheme.of(
-                                                          context)
-                                                          .primary,
+                                                      fillColor: Color(0xFF06d5cd),
                                                       icon: Icon(
                                                         Icons.add,
                                                         color:
@@ -926,10 +913,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                         radius: 16,
                                                         dotWidth: 16,
                                                         dotHeight: 8,
-                                                        dotColor:
-                                                        FlutterFlowTheme.of(
-                                                            context)
-                                                            .accent1,
+                                                        dotColor: Color(0xFF4c06d5cd),
                                                         activeDotColor:
                                                         Colors.black,
                                                         paintStyle:
@@ -954,7 +938,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           style: FlutterFlowTheme.of(context)
                                               .titleLarge
                                               .override(
-                                            fontFamily: 'Inter',
+                                            fontFamily: 'Poppins',
                                             fontSize: 23,
                                             letterSpacing: 0,
                                           ),
@@ -1012,7 +996,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   ),
                                                                   child: Image
                                                                       .asset(
-                                                                    'assets/images/Screenshot_2024-06-01_at_3.14.20_PM.png',
+                                                                    'assets/images/doc1.png',
                                                                     fit: BoxFit
                                                                         .cover,
                                                                   ),
@@ -1046,7 +1030,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                         .displaySmall
                                                                         .override(
                                                                       fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Poppins',
                                                                       fontSize:
                                                                       19,
                                                                       letterSpacing:
@@ -1082,13 +1066,12 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                         Padding(
                                                           padding:
                                                           EdgeInsetsDirectional
-                                                              .fromSTEB(100,
-                                                              0, 0, 0),
+                                                              .fromSTEB(
+                                                              137, 0, 0, 0),
                                                           child: Icon(
-                                                            Icons
-                                                                .drag_indicator,
-                                                            color: Color(
-                                                                0xFF545454),
+                                                            Icons.drag_indicator,
+                                                            color:
+                                                            Color(0xFF545454),
                                                             size: 35,
                                                           ),
                                                         ),
@@ -1097,16 +1080,13 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                   ),
                                                   Flexible(
                                                     child: Padding(
-                                                      padding:
-                                                      EdgeInsetsDirectional
-                                                          .fromSTEB(
-                                                          0, 0, 0, 11),
+                                                      padding: EdgeInsetsDirectional
+                                                          .fromSTEB(0, 0, 0, 11),
                                                       child: Row(
                                                         mainAxisSize:
                                                         MainAxisSize.max,
                                                         mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .start,
+                                                        MainAxisAlignment.start,
                                                         crossAxisAlignment:
                                                         CrossAxisAlignment
                                                             .center,
@@ -1114,13 +1094,9 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                           Padding(
                                                             padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                11,
-                                                                5,
-                                                                10,
-                                                                0),
-                                                            child:
-                                                            FFButtonWidget(
+                                                                .fromSTEB(11, 5,
+                                                                10, 0),
+                                                            child: FFButtonWidget(
                                                               onPressed: () {
                                                                 print(
                                                                     'Button pressed ...');
@@ -1355,7 +1331,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                               ),
                                                               child:
                                                               Image.asset(
-                                                                'assets/images/Screenshot_2024-06-01_at_3.18.13_PM.png',
+                                                                'assets/images/doc2.png',
                                                                 fit: BoxFit
                                                                     .cover,
                                                               ),
@@ -1388,7 +1364,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     .displaySmall
                                                                     .override(
                                                                   fontFamily:
-                                                                  'Readex Pro',
+                                                                  'Poppins',
                                                                   fontSize:
                                                                   19,
                                                                   letterSpacing:
@@ -1686,7 +1662,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                               ),
                                                               child:
                                                               Image.asset(
-                                                                'assets/images/Screenshot_2024-06-01_at_3.18.22_PM.png',
+                                                                'assets/images/doc3.png',
                                                                 fit: BoxFit
                                                                     .cover,
                                                               ),
@@ -1719,7 +1695,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     .displaySmall
                                                                     .override(
                                                                   fontFamily:
-                                                                  'Readex Pro',
+                                                                  'Poppins',
                                                                   fontSize:
                                                                   19,
                                                                   letterSpacing:
@@ -1757,7 +1733,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                       padding:
                                                       EdgeInsetsDirectional
                                                           .fromSTEB(
-                                                          100, 0, 0, 0),
+                                                          95, 0, 0, 0),
                                                       child: Icon(
                                                         Icons.drag_indicator,
                                                         color:
@@ -1982,8 +1958,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                         width: 390,
                                         height: 66,
                                         decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .accent1,
+                                          color: Color(0xFF4c06d5cd),
                                           borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(19),
                                             bottomRight: Radius.circular(19),
@@ -2042,16 +2017,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                       borderRadius: 60,
                                                       borderWidth: 1,
                                                       buttonSize: 65,
-                                                      fillColor:
-                                                      FlutterFlowTheme.of(
-                                                          context)
-                                                          .primary,
+                                                      fillColor: Color(0xFF06d5cd),
                                                       icon: Icon(
                                                         Icons.add,
-                                                        color:
-                                                        FlutterFlowTheme.of(
-                                                            context)
-                                                            .primaryText,
+                                                        color: Colors.black,
                                                         size: 35,
                                                       ),
                                                       onPressed: () {
