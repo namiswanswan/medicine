@@ -48,7 +48,6 @@ class HomeModel extends FlutterFlowModel<HomeWidget> {
     tabBarController?.dispose();
   }
 }
-
 class HomeWidget extends StatefulWidget {
   const HomeWidget({super.key});
 
@@ -157,9 +156,9 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             child: Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0, 0, 2, 0),
               child: Text(
-                'Welcome, Sana!!!!',
+                'Welcome, Sana',
                 style: FlutterFlowTheme.of(context).titleLarge.override(
-                  fontFamily: 'Poppins',
+                  fontFamily: 'Inter',
                   fontSize: 25,
                   letterSpacing: 0,
                 ),
@@ -318,7 +317,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          18, 12, 18, 12),
+                                          18, 12, 18, 15),
                                       child: Container(
                                         width: 363,
                                         height: 100,
@@ -341,11 +340,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                 ClipRRect(
                                                   borderRadius:
                                                   BorderRadius.circular(8),
-                                                  child: Image.network(
-                                                    'https://images.unsplash.com/photo-1587854680352-936b22b91030?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHxGbHVveGV0aW5lJTIwfGVufDB8fHx8MTcxNzI5ODcxOXww&ixlib=rb-4.0.3&q=80&w=1080',
+                                                  child: Image.asset(
+                                                    'assets/images/blue.JPG',
                                                     width: 99,
-                                                    height: 201,
-                                                    fit: BoxFit.none,
+                                                    height: 100,
+                                                    fit: BoxFit.cover,
                                                   ),
                                                 ),
                                               ],
@@ -378,7 +377,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .titleLarge
                                                                 .override(
                                                               fontFamily:
-                                                              'Poppins',
+                                                              'Inter',
                                                               letterSpacing:
                                                               0,
                                                             ),
@@ -446,7 +445,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          18, 12, 18, 12),
+                                          18, 12, 18, 15),
                                       child: Container(
                                         width: 363,
                                         height: 100,
@@ -469,11 +468,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                 ClipRRect(
                                                   borderRadius:
                                                   BorderRadius.circular(8),
-                                                  child: Image.network(
-                                                    'https://images.unsplash.com/photo-1587854680352-936b22b91030?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHxGbHVveGV0aW5lJTIwfGVufDB8fHx8MTcxNzI5ODcxOXww&ixlib=rb-4.0.3&q=80&w=1080',
+                                                  child: Image.asset(
+                                                    'assets/images/green.JPG',
                                                     width: 99,
-                                                    height: 201,
-                                                    fit: BoxFit.none,
+                                                    height: 100,
+                                                    fit: BoxFit.contain,
                                                   ),
                                                 ),
                                               ],
@@ -506,7 +505,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .titleLarge
                                                                 .override(
                                                               fontFamily:
-                                                              'Poppins',
+                                                              'Inter',
                                                               letterSpacing:
                                                               0,
                                                             ),
@@ -574,7 +573,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          18, 12, 18, 12),
+                                          18, 12, 18, 0),
                                       child: Container(
                                         width: 363,
                                         height: 100,
@@ -600,7 +599,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                   child: Image.network(
                                                     'https://images.unsplash.com/photo-1590518563786-901882bf6f82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwzfHxjb3VnaCUyMHN5cnVwfGVufDB8fHx8MTcxNzI5OTE2OHww&ixlib=rb-4.0.3&q=80&w=1080',
                                                     width: 99,
-                                                    height: 107,
+                                                    height: 100,
                                                     fit: BoxFit.fitHeight,
                                                   ),
                                                 ),
@@ -634,7 +633,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .titleLarge
                                                                 .override(
                                                               fontFamily:
-                                                              'Poppins',
+                                                              'Inter',
                                                               letterSpacing:
                                                               0,
                                                             ),
@@ -702,10 +701,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          10, 30, 10, 0),
+                                          10, 25, 10, 0),
                                       child: Container(
                                         width: 390,
-                                        height: 73,
+                                        height: 66,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .accent1,
@@ -717,32 +716,39 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           ),
                                         ),
                                         child: Row(
-                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisSize: MainAxisSize.min,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                           children: [
                                             Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                FlutterFlowIconButton(
-                                                  borderColor:
-                                                  Colors.transparent,
-                                                  borderRadius: 20,
-                                                  borderWidth: 1,
-                                                  buttonSize: 75,
-                                                  icon: Icon(
-                                                    Icons.home_sharp,
-                                                    color: FlutterFlowTheme.of(
-                                                        context)
-                                                        .primaryText,
-                                                    size: 25,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(10, 0, 0, 0),
+                                                  child: FlutterFlowIconButton(
+                                                    borderColor:
+                                                    Colors.transparent,
+                                                    borderRadius: 20,
+                                                    borderWidth: 1,
+                                                    buttonSize: 65,
+                                                    icon: Icon(
+                                                      Icons.home_sharp,
+                                                      color:
+                                                      FlutterFlowTheme.of(
+                                                          context)
+                                                          .primaryText,
+                                                      size: 25,
+                                                    ),
+                                                    onPressed: () async {
+                                                      context.pushNamed('home');
+                                                    },
                                                   ),
-                                                  onPressed: () async {
-                                                    context.pushNamed('/home');
-                                                  },
                                                 ),
                                               ],
                                             ),
                                             Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               children: [
                                                 Align(
                                                   alignment:
@@ -759,7 +765,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                       Colors.transparent,
                                                       borderRadius: 60,
                                                       borderWidth: 1,
-                                                      buttonSize: 75,
+                                                      buttonSize: 65,
                                                       fillColor:
                                                       FlutterFlowTheme.of(
                                                           context)
@@ -784,28 +790,35 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                             Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                FlutterFlowIconButton(
-                                                  borderColor:
-                                                  Colors.transparent,
-                                                  borderRadius: 20,
-                                                  borderWidth: 1,
-                                                  buttonSize: 75,
-                                                  icon: Icon(
-                                                    Icons.manage_search_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                        context)
-                                                        .primaryText,
-                                                    size: 35,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(15, 0, 0, 0),
+                                                  child: FlutterFlowIconButton(
+                                                    borderColor:
+                                                    Colors.transparent,
+                                                    borderRadius: 20,
+                                                    borderWidth: 1,
+                                                    buttonSize: 65,
+                                                    icon: Icon(
+                                                      Icons
+                                                          .manage_search_rounded,
+                                                      color:
+                                                      FlutterFlowTheme.of(
+                                                          context)
+                                                          .primaryText,
+                                                      size: 35,
+                                                    ),
+                                                    onPressed: () async {
+                                                      context.pushNamed(
+                                                        'sp',
+                                                        extra: <String, dynamic>{
+                                                          'arguments': {
+                                                            'transitionInfo': PageTransitionType.rightToLeft,
+                                                          },
+                                                        },
+                                                      );
+                                                    },
                                                   ),
-    onPressed: () async {
-    Navigator.of(context).pushNamed(
-    'null', // Ensure 'null' is a valid route in your app
-    arguments: {
-    'transitionInfo': PageTransitionType.rightToLeft,
-    },
-    );
-    },
-
                                                 ),
                                               ],
                                             ),
@@ -824,7 +837,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                         Expanded(
                                           child: Container(
                                             width: double.infinity,
-                                            height: 150,
+                                            height: 144,
                                             child: Stack(
                                               children: [
                                                 Padding(
@@ -954,7 +967,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                         Padding(
                                           padding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              8, 0, 8, 20),
+                                              8, 0, 8, 15),
                                           child: Container(
                                             width: 375,
                                             height: 106,
@@ -999,7 +1012,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   ),
                                                                   child: Image
                                                                       .asset(
-                                                                    'assets/images/doc1.png',
+                                                                    'assets/images/Screenshot_2024-06-01_at_3.14.20_PM.png',
                                                                     fit: BoxFit
                                                                         .cover,
                                                                   ),
@@ -1027,13 +1040,13 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     .max,
                                                                 children: [
                                                                   Text(
-                                                                    'Dr.',
+                                                                    'Dr. Emily Carter',
                                                                     style: FlutterFlowTheme.of(
                                                                         context)
                                                                         .displaySmall
                                                                         .override(
                                                                       fontFamily:
-                                                                      'Poppins',
+                                                                      'Readex Pro',
                                                                       fontSize:
                                                                       19,
                                                                       letterSpacing:
@@ -1050,7 +1063,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     .max,
                                                                 children: [
                                                                   Text(
-                                                                    'SOMETHING SOMENTHINF',
+                                                                    'Neurologist',
                                                                     style: FlutterFlowTheme.of(
                                                                         context)
                                                                         .bodyMedium
@@ -1299,7 +1312,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          8, 0, 8, 20),
+                                          8, 0, 8, 15),
                                       child: Container(
                                         width: 375,
                                         height: 106,
@@ -1342,7 +1355,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                               ),
                                                               child:
                                                               Image.asset(
-                                                                'assets/images/doc2.png',
+                                                                'assets/images/Screenshot_2024-06-01_at_3.18.13_PM.png',
                                                                 fit: BoxFit
                                                                     .cover,
                                                               ),
@@ -1369,7 +1382,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .max,
                                                             children: [
                                                               Text(
-                                                                'Dr.',
+                                                                'Dr. James Benedict',
                                                                 style: FlutterFlowTheme.of(
                                                                     context)
                                                                     .displaySmall
@@ -1393,7 +1406,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .max,
                                                             children: [
                                                               Text(
-                                                                'SOMETHING SOMENTHINF',
+                                                                'Pediatrician',
                                                                 style: FlutterFlowTheme.of(
                                                                     context)
                                                                     .bodyMedium
@@ -1630,7 +1643,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          8, 0, 8, 20),
+                                          8, 0, 8, 15),
                                       child: Container(
                                         width: 375,
                                         height: 106,
@@ -1673,7 +1686,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                               ),
                                                               child:
                                                               Image.asset(
-                                                                'assets/images/doc3.png',
+                                                                'assets/images/Screenshot_2024-06-01_at_3.18.22_PM.png',
                                                                 fit: BoxFit
                                                                     .cover,
                                                               ),
@@ -1700,7 +1713,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .max,
                                                             children: [
                                                               Text(
-                                                                'Dr.',
+                                                                'Dr. Abigail Robinson',
                                                                 style: FlutterFlowTheme.of(
                                                                     context)
                                                                     .displaySmall
@@ -1724,7 +1737,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 .max,
                                                             children: [
                                                               Text(
-                                                                'SOMETHING SOMENTHINF',
+                                                                'Cardiologist',
                                                                 style: FlutterFlowTheme.of(
                                                                     context)
                                                                     .bodyMedium
@@ -1967,7 +1980,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           10, 0, 10, 0),
                                       child: Container(
                                         width: 390,
-                                        height: 73,
+                                        height: 66,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .accent1,
@@ -1979,32 +1992,39 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           ),
                                         ),
                                         child: Row(
-                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisSize: MainAxisSize.min,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
                                           children: [
                                             Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                FlutterFlowIconButton(
-                                                  borderColor:
-                                                  Colors.transparent,
-                                                  borderRadius: 20,
-                                                  borderWidth: 1,
-                                                  buttonSize: 75,
-                                                  icon: Icon(
-                                                    Icons.home_sharp,
-                                                    color: FlutterFlowTheme.of(
-                                                        context)
-                                                        .primaryText,
-                                                    size: 25,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(10, 0, 0, 0),
+                                                  child: FlutterFlowIconButton(
+                                                    borderColor:
+                                                    Colors.transparent,
+                                                    borderRadius: 20,
+                                                    borderWidth: 1,
+                                                    buttonSize: 65,
+                                                    icon: Icon(
+                                                      Icons.home_sharp,
+                                                      color:
+                                                      FlutterFlowTheme.of(
+                                                          context)
+                                                          .primaryText,
+                                                      size: 25,
+                                                    ),
+                                                    onPressed: () async {
+                                                      context.pushNamed('home');
+                                                    },
                                                   ),
-                                                  onPressed: () async {
-                                                    context.pushNamed('home');
-                                                  },
                                                 ),
                                               ],
                                             ),
                                             Column(
-                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisSize: MainAxisSize.min,
                                               children: [
                                                 Align(
                                                   alignment:
@@ -2021,7 +2041,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                       Colors.transparent,
                                                       borderRadius: 60,
                                                       borderWidth: 1,
-                                                      buttonSize: 75,
+                                                      buttonSize: 65,
                                                       fillColor:
                                                       FlutterFlowTheme.of(
                                                           context)
@@ -2046,27 +2066,33 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                             Column(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
-                                                FlutterFlowIconButton(
-                                                  borderColor:
-                                                  Colors.transparent,
-                                                  borderRadius: 20,
-                                                  borderWidth: 1,
-                                                  buttonSize: 75,
-                                                  icon: Icon(
-                                                    Icons.manage_search_rounded,
-                                                    color: FlutterFlowTheme.of(
-                                                        context)
-                                                        .primaryText,
-                                                    size: 35,
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(15, 0, 0, 0),
+                                                  child: FlutterFlowIconButton(
+                                                    borderColor:
+                                                    Colors.transparent,
+                                                    borderRadius: 20,
+                                                    borderWidth: 1,
+                                                    buttonSize: 65,
+                                                    icon: Icon(
+                                                      Icons
+                                                          .manage_search_rounded,
+                                                      color:
+                                                      FlutterFlowTheme.of(
+                                                          context)
+                                                          .primaryText,
+                                                      size: 35,
+                                                    ),
+                                                    onPressed: () async {
+                                                      context.pushNamed(
+                                                        'null',
+                                                        extra: <String, dynamic>{
+                                                          'transitionInfo': PageTransitionType.rightToLeft,
+                                                        },
+                                                      );
+                                                    },
                                                   ),
-    onPressed: () async {
-    context.pushNamed(
-    'null',
-    extra: <String, dynamic>{
-    'transitionInfo': PageTransitionType.rightToLeft,
-    },
-    );
-    },
                                                 ),
                                               ],
                                             ),
