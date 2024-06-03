@@ -727,7 +727,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                     buttonSize: 65,
                                                     icon: Icon(
                                                       Icons.home_sharp,
-                                                      color: Colors.black,
+                                                      color:
+                                                      FlutterFlowTheme.of(
+                                                          context)
+                                                          .primaryText,
                                                       size: 25,
                                                     ),
                                                     onPressed: () async {
@@ -756,7 +759,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                       borderRadius: 60,
                                                       borderWidth: 1,
                                                       buttonSize: 65,
-                                                      fillColor: Color(0xFF06d5cd),
+                                                      fillColor: Color(0xFF06D5CD),
                                                       icon: Icon(
                                                         Icons.add,
                                                         color:
@@ -779,7 +782,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                               children: [
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(15, 0, 0, 0),
+                                                      .fromSTEB(20, 0, 0, 0),
                                                   child: FlutterFlowIconButton(
                                                     borderColor:
                                                     Colors.transparent,
@@ -824,7 +827,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                         Expanded(
                                           child: Container(
                                             width: double.infinity,
-                                            height: 144,
+                                            height: 127,
                                             child: Stack(
                                               children: [
                                                 Padding(
@@ -845,10 +848,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                         child: Image.network(
                                                           'https://img.freepik.com/free-photo/doctor-suggesting-hospital-program-patient_53876-14806.jpg?size=626&ext=jpg',
                                                           width: 300,
-                                                          height: 267,
+                                                          height: 287,
                                                           fit: BoxFit.cover,
                                                           alignment:
-                                                          Alignment(-1, -1),
+                                                          Alignment(0, -1),
                                                         ),
                                                       ),
                                                       ClipRRect(
@@ -856,10 +859,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                         BorderRadius
                                                             .circular(8),
                                                         child: Image.network(
-                                                          'https://picsum.photos/seed/627/600',
+                                                          'https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxNHx8ZG9jdG9yfGVufDB8fHx8MTcxNzQwMzcxOHww&ixlib=rb-4.0.3&q=80&w=1080',
                                                           width: 300,
                                                           height: 200,
-                                                          fit: BoxFit.cover,
+                                                          fit: BoxFit.fitWidth,
                                                         ),
                                                       ),
                                                       ClipRRect(
@@ -913,7 +916,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                         radius: 16,
                                                         dotWidth: 16,
                                                         dotHeight: 8,
-                                                        dotColor: Color(0xFF4c06d5cd),
+                                                        dotColor: Color(0xFF4C06D5CD),
                                                         activeDotColor:
                                                         Colors.black,
                                                         paintStyle:
@@ -938,7 +941,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           style: FlutterFlowTheme.of(context)
                                               .titleLarge
                                               .override(
-                                            fontFamily: 'Poppins',
+                                            fontFamily: 'Inter',
                                             fontSize: 23,
                                             letterSpacing: 0,
                                           ),
@@ -951,142 +954,171 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                         Padding(
                                           padding:
                                           EdgeInsetsDirectional.fromSTEB(
-                                              8, 0, 8, 15),
+                                              8, 0, 8, 25),
                                           child: Container(
                                             width: 375,
-                                            height: 106,
+                                            height: 94,
                                             decoration: BoxDecoration(
                                               color: Colors.white,
                                               borderRadius:
                                               BorderRadius.circular(24),
                                             ),
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(2, 0, 2, 0),
-                                              child: Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  Padding(
-                                                    padding:
-                                                    EdgeInsetsDirectional
-                                                        .fromSTEB(
-                                                        0, 4, 0, 5),
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                      MainAxisSize.max,
-                                                      children: [
-                                                        Column(
+                                            child: Column(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                Row(
+                                                  mainAxisSize:
+                                                  MainAxisSize.max,
+                                                  children: [
+                                                    Container(
+                                                      width: 375,
+                                                      height: 50,
+                                                      decoration: BoxDecoration(
+                                                        color:
+                                                        Color(0x5F91F0EB),
+                                                        borderRadius:
+                                                        BorderRadius.only(
+                                                          bottomLeft:
+                                                          Radius.circular(
+                                                              60),
+                                                          bottomRight:
+                                                          Radius.circular(
+                                                              60),
+                                                          topLeft:
+                                                          Radius.circular(
+                                                              60),
+                                                          topRight:
+                                                          Radius.circular(
+                                                              60),
+                                                        ),
+                                                      ),
+                                                      child: Padding(
+                                                        padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(
+                                                            0, 2, 0, 0),
+                                                        child: Row(
                                                           mainAxisSize:
                                                           MainAxisSize.max,
                                                           children: [
-                                                            Row(
+                                                            Column(
                                                               mainAxisSize:
                                                               MainAxisSize
                                                                   .max,
                                                               children: [
-                                                                Container(
-                                                                  width: 40,
-                                                                  height: 40,
-                                                                  clipBehavior:
-                                                                  Clip.antiAlias,
-                                                                  decoration:
-                                                                  BoxDecoration(
-                                                                    shape: BoxShape
-                                                                        .circle,
-                                                                  ),
-                                                                  child: Image
-                                                                      .asset(
-                                                                    'assets/images/doc1.png',
-                                                                    fit: BoxFit
-                                                                        .cover,
-                                                                  ),
+                                                                Row(
+                                                                  mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                                  children: [
+                                                                    Container(
+                                                                      width: 40,
+                                                                      height:
+                                                                      40,
+                                                                      clipBehavior:
+                                                                      Clip.antiAlias,
+                                                                      decoration:
+                                                                      BoxDecoration(
+                                                                        shape: BoxShape
+                                                                            .circle,
+                                                                      ),
+                                                                      child: Image
+                                                                          .asset(
+                                                                        'assets/images/doc1.png',
+                                                                        fit: BoxFit
+                                                                            .cover,
+                                                                      ),
+                                                                    ),
+                                                                  ],
                                                                 ),
                                                               ],
                                                             ),
+                                                            Padding(
+                                                              padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                  10,
+                                                                  0,
+                                                                  0,
+                                                                  0),
+                                                              child: Column(
+                                                                mainAxisSize:
+                                                                MainAxisSize
+                                                                    .max,
+                                                                crossAxisAlignment:
+                                                                CrossAxisAlignment
+                                                                    .start,
+                                                                children: [
+                                                                  Row(
+                                                                    mainAxisSize:
+                                                                    MainAxisSize
+                                                                        .max,
+                                                                    children: [
+                                                                      Text(
+                                                                        'Dr. Emily Carter',
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .displaySmall
+                                                                            .override(
+                                                                          fontFamily: 'Readex Pro',
+                                                                          fontSize: 19,
+                                                                          letterSpacing: 0,
+                                                                          fontWeight: FontWeight.normal,
+                                                                        ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                  Row(
+                                                                    mainAxisSize:
+                                                                    MainAxisSize
+                                                                        .max,
+                                                                    children: [
+                                                                      Text(
+                                                                        'Neurologist',
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .bodyMedium
+                                                                            .override(
+                                                                          fontFamily: 'Poppins',
+                                                                          letterSpacing: 0,
+                                                                        ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ],
+                                                              ),
+                                                            ),
+                                                            Padding(
+                                                              padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                  133,
+                                                                  0,
+                                                                  0,
+                                                                  0),
+                                                              child: Icon(
+                                                                Icons
+                                                                    .drag_indicator,
+                                                                color: Color(
+                                                                    0xFF545454),
+                                                                size: 35,
+                                                              ),
+                                                            ),
                                                           ],
                                                         ),
-                                                        Padding(
-                                                          padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(10,
-                                                              0, 0, 0),
-                                                          child: Column(
-                                                            mainAxisSize:
-                                                            MainAxisSize
-                                                                .max,
-                                                            crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                            children: [
-                                                              Row(
-                                                                mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                                children: [
-                                                                  Text(
-                                                                    'Dr. Emily Carter',
-                                                                    style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                        .displaySmall
-                                                                        .override(
-                                                                      fontFamily:
-                                                                      'Poppins',
-                                                                      fontSize:
-                                                                      19,
-                                                                      letterSpacing:
-                                                                      0,
-                                                                      fontWeight:
-                                                                      FontWeight.normal,
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                              Row(
-                                                                mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                                children: [
-                                                                  Text(
-                                                                    'Neurologist',
-                                                                    style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                      fontFamily:
-                                                                      'Poppins',
-                                                                      letterSpacing:
-                                                                      0,
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                              137, 0, 0, 0),
-                                                          child: Icon(
-                                                            Icons.drag_indicator,
-                                                            color:
-                                                            Color(0xFF545454),
-                                                            size: 35,
-                                                          ),
-                                                        ),
-                                                      ],
+                                                      ),
                                                     ),
-                                                  ),
-                                                  Flexible(
-                                                    child: Padding(
-                                                      padding: EdgeInsetsDirectional
-                                                          .fromSTEB(0, 0, 0, 11),
+                                                  ],
+                                                ),
+                                                Row(
+                                                  mainAxisSize:
+                                                  MainAxisSize.max,
+                                                  children: [
+                                                    Flexible(
                                                       child: Row(
                                                         mainAxisSize:
                                                         MainAxisSize.max,
                                                         mainAxisAlignment:
-                                                        MainAxisAlignment.start,
+                                                        MainAxisAlignment
+                                                            .start,
                                                         crossAxisAlignment:
                                                         CrossAxisAlignment
                                                             .center,
@@ -1094,9 +1126,13 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                           Padding(
                                                             padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(11, 5,
-                                                                10, 0),
-                                                            child: FFButtonWidget(
+                                                                .fromSTEB(
+                                                                11,
+                                                                5,
+                                                                10,
+                                                                0),
+                                                            child:
+                                                            FFButtonWidget(
                                                               onPressed: () {
                                                                 print(
                                                                     'Button pressed ...');
@@ -1121,8 +1157,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     0,
                                                                     0,
                                                                     0),
-                                                                color: Colors
-                                                                    .white,
+                                                                color: Color(
+                                                                    0x5F91F0EB),
                                                                 textStyle: FlutterFlowTheme.of(
                                                                     context)
                                                                     .titleSmall
@@ -1136,11 +1172,22 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   letterSpacing:
                                                                   0,
                                                                 ),
-                                                                elevation: 5,
                                                                 borderRadius:
                                                                 BorderRadius
-                                                                    .circular(
-                                                                    8),
+                                                                    .only(
+                                                                  bottomLeft: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                  bottomRight: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                  topLeft: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                  topRight: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                ),
                                                               ),
                                                             ),
                                                           ),
@@ -1181,7 +1228,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                       0,
                                                                       0),
                                                                   color: Color(
-                                                                      0xFFFBFBFB),
+                                                                      0x5F91F0EB),
                                                                   textStyle: FlutterFlowTheme.of(
                                                                       context)
                                                                       .titleSmall
@@ -1193,17 +1240,27 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     letterSpacing:
                                                                     0,
                                                                   ),
-                                                                  elevation: 5,
                                                                   borderSide:
                                                                   BorderSide(
                                                                     color: Colors
                                                                         .transparent,
-                                                                    width: 1,
                                                                   ),
                                                                   borderRadius:
                                                                   BorderRadius
-                                                                      .circular(
-                                                                      8),
+                                                                      .only(
+                                                                    bottomLeft:
+                                                                    Radius.circular(
+                                                                        60),
+                                                                    bottomRight:
+                                                                    Radius.circular(
+                                                                        60),
+                                                                    topLeft: Radius
+                                                                        .circular(
+                                                                        60),
+                                                                    topRight: Radius
+                                                                        .circular(
+                                                                        60),
+                                                                  ),
                                                                 ),
                                                               ),
                                                             ),
@@ -1246,8 +1303,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                         0,
                                                                         0,
                                                                         0),
-                                                                    color: Colors
-                                                                        .white,
+                                                                    color: Color(
+                                                                        0x5F91F0EB),
                                                                     textStyle: FlutterFlowTheme.of(
                                                                         context)
                                                                         .titleSmall
@@ -1259,17 +1316,27 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                       letterSpacing:
                                                                       0,
                                                                     ),
-                                                                    elevation:
-                                                                    5,
                                                                     borderSide:
                                                                     BorderSide(
                                                                       color: Colors
                                                                           .transparent,
-                                                                      width: 1,
                                                                     ),
                                                                     borderRadius:
                                                                     BorderRadius
-                                                                        .circular(8),
+                                                                        .only(
+                                                                      bottomLeft:
+                                                                      Radius.circular(
+                                                                          60),
+                                                                      bottomRight:
+                                                                      Radius.circular(
+                                                                          60),
+                                                                      topLeft: Radius
+                                                                          .circular(
+                                                                          60),
+                                                                      topRight:
+                                                                      Radius.circular(
+                                                                          60),
+                                                                    ),
                                                                   ),
                                                                 ),
                                                               ),
@@ -1278,9 +1345,9 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                         ],
                                                       ),
                                                     ),
-                                                  ),
-                                                ],
-                                              ),
+                                                  ],
+                                                ),
+                                              ],
                                             ),
                                           ),
                                         ),
@@ -1288,25 +1355,35 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          8, 0, 8, 15),
+                                          8, 0, 8, 25),
                                       child: Container(
                                         width: 375,
-                                        height: 106,
+                                        height: 97,
                                         decoration: BoxDecoration(
                                           color: Colors.white,
                                           borderRadius:
                                           BorderRadius.circular(24),
                                         ),
-                                        child: Padding(
-                                          padding:
-                                          EdgeInsetsDirectional.fromSTEB(
-                                              2, 0, 2, 0),
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Padding(
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Container(
+                                              width: 375,
+                                              height: 55,
+                                              decoration: BoxDecoration(
+                                                color: Color(0x5F91F0EB),
+                                                borderRadius: BorderRadius.only(
+                                                  bottomLeft:
+                                                  Radius.circular(60),
+                                                  bottomRight:
+                                                  Radius.circular(60),
+                                                  topLeft: Radius.circular(60),
+                                                  topRight: Radius.circular(60),
+                                                ),
+                                              ),
+                                              child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(0, 4, 0, 5),
+                                                    .fromSTEB(0, 7, 0, 0),
                                                 child: Row(
                                                   mainAxisSize:
                                                   MainAxisSize.max,
@@ -1364,7 +1441,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     .displaySmall
                                                                     .override(
                                                                   fontFamily:
-                                                                  'Poppins',
+                                                                  'Readex Pro',
                                                                   fontSize:
                                                                   19,
                                                                   letterSpacing:
@@ -1402,7 +1479,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                       padding:
                                                       EdgeInsetsDirectional
                                                           .fromSTEB(
-                                                          100, 0, 0, 0),
+                                                          100, 0, 0, 6),
                                                       child: Icon(
                                                         Icons.drag_indicator,
                                                         color:
@@ -1413,10 +1490,11 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                   ],
                                                 ),
                                               ),
-                                              Flexible(
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0, 0, 0, 11),
+                                            ),
+                                            Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                Flexible(
                                                   child: Row(
                                                     mainAxisSize:
                                                     MainAxisSize.max,
@@ -1455,7 +1533,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 0,
                                                                 0,
                                                                 0),
-                                                            color: Colors.white,
+                                                            color: Color(
+                                                                0x5F91F0EB),
                                                             textStyle:
                                                             FlutterFlowTheme.of(
                                                                 context)
@@ -1470,11 +1549,20 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                               letterSpacing:
                                                               0,
                                                             ),
-                                                            elevation: 5,
                                                             borderRadius:
                                                             BorderRadius
-                                                                .circular(
-                                                                8),
+                                                                .only(
+                                                              bottomLeft: Radius
+                                                                  .circular(60),
+                                                              bottomRight:
+                                                              Radius
+                                                                  .circular(
+                                                                  60),
+                                                              topLeft: Radius
+                                                                  .circular(60),
+                                                              topRight: Radius
+                                                                  .circular(60),
+                                                            ),
                                                           ),
                                                         ),
                                                       ),
@@ -1492,7 +1580,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                               print(
                                                                   'Button pressed ...');
                                                             },
-                                                            text: '↑ 76% ',
+                                                            text: '↓76% ',
                                                             options:
                                                             FFButtonOptions(
                                                               width: 64,
@@ -1512,7 +1600,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   0,
                                                                   0),
                                                               color: Color(
-                                                                  0xFFFBFBFB),
+                                                                  0x5F91F0EB),
                                                               textStyle:
                                                               FlutterFlowTheme.of(
                                                                   context)
@@ -1525,17 +1613,28 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 letterSpacing:
                                                                 0,
                                                               ),
-                                                              elevation: 5,
                                                               borderSide:
                                                               BorderSide(
                                                                 color: Colors
                                                                     .transparent,
-                                                                width: 1,
                                                               ),
                                                               borderRadius:
                                                               BorderRadius
-                                                                  .circular(
-                                                                  8),
+                                                                  .only(
+                                                                bottomLeft: Radius
+                                                                    .circular(
+                                                                    60),
+                                                                bottomRight:
+                                                                Radius
+                                                                    .circular(
+                                                                    60),
+                                                                topLeft: Radius
+                                                                    .circular(
+                                                                    60),
+                                                                topRight: Radius
+                                                                    .circular(
+                                                                    60),
+                                                              ),
                                                             ),
                                                           ),
                                                         ),
@@ -1555,9 +1654,10 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 0),
                                                             child:
                                                             FFButtonWidget(
-                                                              onPressed: () {
-                                                                print(
-                                                                    'Button pressed ...');
+                                                              onPressed:
+                                                                  () async {
+                                                                context.pushNamed(
+                                                                    'doctor1');
                                                               },
                                                               text:
                                                               '+ Appointment',
@@ -1579,8 +1679,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     0,
                                                                     0,
                                                                     0),
-                                                                color: Colors
-                                                                    .white,
+                                                                color: Color(
+                                                                    0x5F91F0EB),
                                                                 textStyle: FlutterFlowTheme.of(
                                                                     context)
                                                                     .titleSmall
@@ -1592,17 +1692,27 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   letterSpacing:
                                                                   0,
                                                                 ),
-                                                                elevation: 5,
                                                                 borderSide:
                                                                 BorderSide(
                                                                   color: Colors
                                                                       .transparent,
-                                                                  width: 1,
                                                                 ),
                                                                 borderRadius:
                                                                 BorderRadius
-                                                                    .circular(
-                                                                    8),
+                                                                    .only(
+                                                                  bottomLeft: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                  bottomRight: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                  topLeft: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                  topRight: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                ),
                                                               ),
                                                             ),
                                                           ),
@@ -1611,18 +1721,18 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                     ],
                                                   ),
                                                 ),
-                                              ),
-                                            ],
-                                          ),
+                                              ],
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          8, 0, 8, 15),
+                                          8, 0, 8, 40),
                                       child: Container(
                                         width: 375,
-                                        height: 106,
+                                        height: 96,
                                         decoration: BoxDecoration(
                                           color: Colors.white,
                                           borderRadius:
@@ -1635,205 +1745,168 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
-                                              Padding(
-                                                padding: EdgeInsetsDirectional
-                                                    .fromSTEB(0, 4, 0, 5),
-                                                child: Row(
-                                                  mainAxisSize:
-                                                  MainAxisSize.max,
-                                                  children: [
-                                                    Column(
-                                                      mainAxisSize:
-                                                      MainAxisSize.max,
-                                                      children: [
-                                                        Row(
-                                                          mainAxisSize:
-                                                          MainAxisSize.max,
-                                                          children: [
-                                                            Container(
-                                                              width: 40,
-                                                              height: 40,
-                                                              clipBehavior: Clip
-                                                                  .antiAlias,
-                                                              decoration:
-                                                              BoxDecoration(
-                                                                shape: BoxShape
-                                                                    .circle,
-                                                              ),
-                                                              child:
-                                                              Image.asset(
-                                                                'assets/images/doc3.png',
-                                                                fit: BoxFit
-                                                                    .cover,
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                      EdgeInsetsDirectional
-                                                          .fromSTEB(
-                                                          10, 0, 0, 0),
-                                                      child: Column(
+                                              Container(
+                                                width: 375,
+                                                height: 52,
+                                                decoration: BoxDecoration(
+                                                  color: Color(0x5F91F0EB),
+                                                  borderRadius:
+                                                  BorderRadius.only(
+                                                    bottomLeft:
+                                                    Radius.circular(60),
+                                                    bottomRight:
+                                                    Radius.circular(60),
+                                                    topLeft:
+                                                    Radius.circular(60),
+                                                    topRight:
+                                                    Radius.circular(60),
+                                                  ),
+                                                ),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0, 4, 0, 0),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                    MainAxisSize.max,
+                                                    children: [
+                                                      Column(
                                                         mainAxisSize:
                                                         MainAxisSize.max,
-                                                        crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .start,
                                                         children: [
                                                           Row(
                                                             mainAxisSize:
                                                             MainAxisSize
                                                                 .max,
                                                             children: [
-                                                              Text(
-                                                                'Dr. Abigail Robinson',
-                                                                style: FlutterFlowTheme.of(
-                                                                    context)
-                                                                    .displaySmall
-                                                                    .override(
-                                                                  fontFamily:
-                                                                  'Poppins',
-                                                                  fontSize:
-                                                                  19,
-                                                                  letterSpacing:
-                                                                  0,
-                                                                  fontWeight:
-                                                                  FontWeight
-                                                                      .normal,
+                                                              Container(
+                                                                width: 40,
+                                                                height: 40,
+                                                                clipBehavior: Clip
+                                                                    .antiAlias,
+                                                                decoration:
+                                                                BoxDecoration(
+                                                                  shape: BoxShape
+                                                                      .circle,
                                                                 ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                          Row(
-                                                            mainAxisSize:
-                                                            MainAxisSize
-                                                                .max,
-                                                            children: [
-                                                              Text(
-                                                                'Cardiologist',
-                                                                style: FlutterFlowTheme.of(
-                                                                    context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                  fontFamily:
-                                                                  'Poppins',
-                                                                  letterSpacing:
-                                                                  0,
+                                                                child:
+                                                                Image.asset(
+                                                                  'assets/images/doc3.png',
+                                                                  fit: BoxFit
+                                                                      .cover,
                                                                 ),
                                                               ),
                                                             ],
                                                           ),
                                                         ],
                                                       ),
-                                                    ),
-                                                    Padding(
-                                                      padding:
-                                                      EdgeInsetsDirectional
-                                                          .fromSTEB(
-                                                          95, 0, 0, 0),
-                                                      child: Icon(
-                                                        Icons.drag_indicator,
-                                                        color:
-                                                        Color(0xFF545454),
-                                                        size: 35,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Flexible(
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0, 0, 0, 11),
-                                                  child: Row(
-                                                    mainAxisSize:
-                                                    MainAxisSize.max,
-                                                    mainAxisAlignment:
-                                                    MainAxisAlignment.start,
-                                                    crossAxisAlignment:
-                                                    CrossAxisAlignment
-                                                        .center,
-                                                    children: [
                                                       Padding(
                                                         padding:
                                                         EdgeInsetsDirectional
-                                                            .fromSTEB(11, 5,
-                                                            10, 0),
-                                                        child: FFButtonWidget(
-                                                          onPressed: () {
-                                                            print(
-                                                                'Button pressed ...');
-                                                          },
-                                                          text: '⏱︎ 25 years',
-                                                          options:
-                                                          FFButtonOptions(
-                                                            width: 113,
-                                                            height: 30,
-                                                            padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                14,
-                                                                0,
-                                                                14,
-                                                                0),
-                                                            iconPadding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                0,
-                                                                0,
-                                                                0,
-                                                                0),
-                                                            color: Colors.white,
-                                                            textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                context)
-                                                                .titleSmall
-                                                                .override(
-                                                              fontFamily:
-                                                              'Poppins',
-                                                              color: Color(
-                                                                  0xFF030303),
-                                                              fontSize:
-                                                              15,
-                                                              letterSpacing:
-                                                              0,
+                                                            .fromSTEB(10, 0,
+                                                            0, 0),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                          MainAxisSize.max,
+                                                          crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .start,
+                                                          children: [
+                                                            Row(
+                                                              mainAxisSize:
+                                                              MainAxisSize
+                                                                  .max,
+                                                              children: [
+                                                                Text(
+                                                                  'Dr. Abigail Robinson',
+                                                                  style: FlutterFlowTheme.of(
+                                                                      context)
+                                                                      .displaySmall
+                                                                      .override(
+                                                                    fontFamily:
+                                                                    'Readex Pro',
+                                                                    fontSize:
+                                                                    19,
+                                                                    letterSpacing:
+                                                                    0,
+                                                                    fontWeight:
+                                                                    FontWeight.normal,
+                                                                  ),
+                                                                ),
+                                                              ],
                                                             ),
-                                                            elevation: 5,
-                                                            borderRadius:
-                                                            BorderRadius
-                                                                .circular(
-                                                                8),
-                                                          ),
+                                                            Row(
+                                                              mainAxisSize:
+                                                              MainAxisSize
+                                                                  .max,
+                                                              children: [
+                                                                Text(
+                                                                  'Cardiologist',
+                                                                  style: FlutterFlowTheme.of(
+                                                                      context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                    fontFamily:
+                                                                    'Poppins',
+                                                                    letterSpacing:
+                                                                    0,
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ],
                                                         ),
                                                       ),
-                                                      Align(
-                                                        alignment:
-                                                        AlignmentDirectional(
-                                                            0, 0),
-                                                        child: Padding(
+                                                      Padding(
+                                                        padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(90, 0,
+                                                            0, 4),
+                                                        child: Icon(
+                                                          Icons.drag_indicator,
+                                                          color:
+                                                          Color(0xFF545454),
+                                                          size: 35,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                children: [
+                                                  Flexible(
+                                                    child: Row(
+                                                      mainAxisSize:
+                                                      MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                      MainAxisAlignment
+                                                          .start,
+                                                      crossAxisAlignment:
+                                                      CrossAxisAlignment
+                                                          .center,
+                                                      children: [
+                                                        Padding(
                                                           padding:
                                                           EdgeInsetsDirectional
-                                                              .fromSTEB(4,
+                                                              .fromSTEB(11,
                                                               5, 10, 0),
                                                           child: FFButtonWidget(
                                                             onPressed: () {
                                                               print(
                                                                   'Button pressed ...');
                                                             },
-                                                            text: '↑ 80% ',
+                                                            text: '⏱︎ 25 years',
                                                             options:
                                                             FFButtonOptions(
-                                                              width: 64,
+                                                              width: 113,
                                                               height: 30,
                                                               padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(
+                                                                  14,
                                                                   0,
-                                                                  0,
-                                                                  0,
+                                                                  14,
                                                                   0),
                                                               iconPadding:
                                                               EdgeInsetsDirectional
@@ -1843,7 +1916,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   0,
                                                                   0),
                                                               color: Color(
-                                                                  0xFFFBFBFB),
+                                                                  0x5F91F0EB),
                                                               textStyle:
                                                               FlutterFlowTheme.of(
                                                                   context)
@@ -1851,38 +1924,44 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   .override(
                                                                 fontFamily:
                                                                 'Poppins',
-                                                                color: Colors
-                                                                    .black,
+                                                                color: Color(
+                                                                    0xFF030303),
+                                                                fontSize:
+                                                                15,
                                                                 letterSpacing:
                                                                 0,
                                                               ),
-                                                              elevation: 5,
-                                                              borderSide:
-                                                              BorderSide(
-                                                                color: Colors
-                                                                    .transparent,
-                                                                width: 1,
-                                                              ),
                                                               borderRadius:
                                                               BorderRadius
-                                                                  .circular(
-                                                                  8),
+                                                                  .only(
+                                                                bottomLeft: Radius
+                                                                    .circular(
+                                                                    60),
+                                                                bottomRight:
+                                                                Radius
+                                                                    .circular(
+                                                                    60),
+                                                                topLeft: Radius
+                                                                    .circular(
+                                                                    60),
+                                                                topRight: Radius
+                                                                    .circular(
+                                                                    60),
+                                                              ),
                                                             ),
                                                           ),
                                                         ),
-                                                      ),
-                                                      Expanded(
-                                                        child: Align(
+                                                        Align(
                                                           alignment:
                                                           AlignmentDirectional(
-                                                              1, 0),
+                                                              0, 0),
                                                           child: Padding(
                                                             padding:
                                                             EdgeInsetsDirectional
                                                                 .fromSTEB(
-                                                                0,
+                                                                4,
                                                                 5,
-                                                                9,
+                                                                10,
                                                                 0),
                                                             child:
                                                             FFButtonWidget(
@@ -1890,18 +1969,17 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                 print(
                                                                     'Button pressed ...');
                                                               },
-                                                              text:
-                                                              '+ Appointment',
+                                                              text: '↑ 80% ',
                                                               options:
                                                               FFButtonOptions(
-                                                                width: 159,
-                                                                height: 32,
+                                                                width: 64,
+                                                                height: 30,
                                                                 padding:
                                                                 EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                    12,
                                                                     0,
-                                                                    12,
+                                                                    0,
+                                                                    0,
                                                                     0),
                                                                 iconPadding:
                                                                 EdgeInsetsDirectional
@@ -1910,8 +1988,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     0,
                                                                     0,
                                                                     0),
-                                                                color: Colors
-                                                                    .white,
+                                                                color: Color(
+                                                                    0x5F91F0EB),
                                                                 textStyle: FlutterFlowTheme.of(
                                                                     context)
                                                                     .titleSmall
@@ -1923,28 +2001,113 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                   letterSpacing:
                                                                   0,
                                                                 ),
-                                                                elevation: 5,
                                                                 borderSide:
                                                                 BorderSide(
                                                                   color: Colors
                                                                       .transparent,
-                                                                  width: 1,
                                                                 ),
                                                                 borderRadius:
                                                                 BorderRadius
-                                                                    .circular(
-                                                                    8),
+                                                                    .only(
+                                                                  bottomLeft: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                  bottomRight: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                  topLeft: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                  topRight: Radius
+                                                                      .circular(
+                                                                      60),
+                                                                ),
                                                               ),
-                                                            ).animateOnActionTrigger(
-                                                              animationsMap[
-                                                              'buttonOnActionTriggerAnimation']!,
                                                             ),
                                                           ),
                                                         ),
-                                                      ),
-                                                    ],
+                                                        Expanded(
+                                                          child: Align(
+                                                            alignment:
+                                                            AlignmentDirectional(
+                                                                1, 0),
+                                                            child: Padding(
+                                                              padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                  0,
+                                                                  5,
+                                                                  9,
+                                                                  0),
+                                                              child:
+                                                              FFButtonWidget(
+                                                                onPressed:
+                                                                    () async {
+                                                                  context.pushNamed(
+                                                                      'doctor1');
+                                                                },
+                                                                text:
+                                                                '+ Appointment',
+                                                                options:
+                                                                FFButtonOptions(
+                                                                  width: 159,
+                                                                  height: 32,
+                                                                  padding: EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                      12,
+                                                                      0,
+                                                                      12,
+                                                                      0),
+                                                                  iconPadding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                      0,
+                                                                      0,
+                                                                      0,
+                                                                      0),
+                                                                  color: Color(
+                                                                      0x5F91F0EB),
+                                                                  textStyle: FlutterFlowTheme.of(
+                                                                      context)
+                                                                      .titleSmall
+                                                                      .override(
+                                                                    fontFamily:
+                                                                    'Poppins',
+                                                                    color: Colors
+                                                                        .black,
+                                                                    letterSpacing:
+                                                                    0,
+                                                                  ),
+                                                                  borderSide:
+                                                                  BorderSide(
+                                                                    color: Colors
+                                                                        .transparent,
+                                                                  ),
+                                                                  borderRadius:
+                                                                  BorderRadius
+                                                                      .only(
+                                                                    bottomLeft:
+                                                                    Radius.circular(
+                                                                        60),
+                                                                    bottomRight:
+                                                                    Radius.circular(
+                                                                        60),
+                                                                    topLeft: Radius
+                                                                        .circular(
+                                                                        60),
+                                                                    topRight: Radius
+                                                                        .circular(
+                                                                        60),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
                                                   ),
-                                                ),
+                                                ],
                                               ),
                                             ],
                                           ),
@@ -2017,10 +2180,13 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                       borderRadius: 60,
                                                       borderWidth: 1,
                                                       buttonSize: 65,
-                                                      fillColor: Color(0xFF06d5cd),
+                                                      fillColor: Color(0xFF06D5CD),
                                                       icon: Icon(
                                                         Icons.add,
-                                                        color: Colors.black,
+                                                        color:
+                                                        FlutterFlowTheme.of(
+                                                            context)
+                                                            .primaryText,
                                                         size: 35,
                                                       ),
                                                       onPressed: () {
@@ -2037,7 +2203,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                               children: [
                                                 Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(15, 0, 0, 0),
+                                                      .fromSTEB(20, 0, 0, 0),
                                                   child: FlutterFlowIconButton(
                                                     borderColor:
                                                     Colors.transparent,
